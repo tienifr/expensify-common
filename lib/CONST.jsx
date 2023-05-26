@@ -543,6 +543,9 @@ export const CONST = {
 
         // Regex that matches on a E.164 phone number starting with a '+'
         E164_REGEX: /^\+?[1-9]\d{1,14}$/,
+
+        // Regex that matches on a US phone number with area code
+        NATIONAL_REGEX: /^(\([2-9][0-9]{2}\)\s?|\d{3}-)\d{3}-\d{4}$/,
     },
 
     PASSWORD_COMPLEXITY_REGEX_STRING: '^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{8,}$',
